@@ -6,7 +6,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
-// app.use(express.static('build'))
+app.use(express.static('build'))
 
 morgan.token('body', (req,res) => {return JSON.stringify(req.body)} )
 
@@ -95,7 +95,7 @@ app.post('/api/persons', (req, res) => {
 
 app.delete('/api/persons/:id', (req, res) => {
   const id = Number(req.params.id)
-  persons = persons.find(person => person.id === id)
+  persons = persons.filter(person => person.id !== id)
 
   res.status(204).end()
 })

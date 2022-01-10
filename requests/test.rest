@@ -1,11 +1,38 @@
-DELETE http://localhost:3002/api/persons/4
+DELETE http://localhost:3001/api/persons/4
 
 ####
 
-POST http://localhost:3002/api/persons/
+POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-    "name": "Arto Hellas",
+    "name": "Manuel Felix",
     "number": "912345678"
 }
+
+####
+
+DELETE http://localhost:3001/api/persons/8354
+
+
+####
+
+GET https://intense-coast-04976.herokuapp.com/api/persons
+
+####
+
+GET https://intense-coast-04976.herokuapp.com/api/persons/3
+
+####
+
+POST https://intense-coast-04976.herokuapp.com/api/persons
+Content-Type: application/json
+
+{
+    "name": "Manuel Felix",
+    "number": "123"
+}
+
+####
+
+DELETE https://intense-coast-04976.herokuapp.com/api/persons/4

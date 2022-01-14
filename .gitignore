@@ -6,3 +6,4 @@ requests/
 .vscode
 
 #Environment files
+.env

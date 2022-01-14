@@ -6,18 +6,31 @@ POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 {
-    "name": "Manuel Felix",
-    "number": "912345678"
+    "name": "Francisca Felix",
+    "number": "12345678"
 }
 
 ####
 
-DELETE http://localhost:3001/api/persons/8354
-
+GET http://localhost:3001/api/persons/
 
 ####
 
-GET https://intense-coast-04976.herokuapp.com/api/persons
+DELETE http://localhost:3001/api/persons/61e18269826eefc8e8bce540
+
+####
+
+PUT http://localhost:3001/api/persons/61e176b4bad7b34f51927a8a
+Content-Type: application/json
+
+{
+    "name": "Francisca Felix",
+    "number": "424242"
+}
+
+####
+
+GET https://guarded-hamlet-13507.herokuapp.com/api/persons
 
 ####
 
